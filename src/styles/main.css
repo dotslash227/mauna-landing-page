@@ -50,6 +50,7 @@
 @media (max-width: 767px){         
     .homeImagePlaceholder{    
         max-width:100%;
+        display: none;
     }
     .home-img{
         max-width: 100%;

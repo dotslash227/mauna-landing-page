@@ -9,16 +9,29 @@ import EmailInput from '../components/EmailInput'; //EmailInput Component for em
 class Home extends React.Component{
     constructor(props){
         super(props);
-        this.state = {
-            emailAddress: ''
+        this.state = { 
+            emailAddress:''
         }
+        this.handleEmailChange = this.handleEmailChange.bind(this); //Binder for handleEmail input method
+        this.submitEmail = this.submitEmail.bind(this); // Binder for submit email method
+    }
+
+    // Method to handle changing email event
+    handleEmailChange(event){                
+        this.setState({emailAddress:event.target.value})
+    }
+
+    // Method for handling click aftwer email input
+    // ToDo : Integrate the email submission with a backend: Backend has to be decided (FireBase or Google Sheets or own custom end)
+    submitEmail(){
+        console.log("email in state: ", this.state.emailAddress);
     }
 
     render(){
         return(
             <div className="container-fluid">                
                 <div className="row">
-                    <div className="col homeImagePlaceholder">                        
+                    <div className="col homeImagePlaceholder">
                             <img src={require('../assets/main.jpg')} className="home-img img-fluid" />                        
                     </div>                    
                     <div className="homeContentArea col">
@@ -34,7 +47,7 @@ class Home extends React.Component{
                                 <p className="info-text">
                                     Notify me when Mauna launches                                    
                                 </p>                             
-                                <EmailInput />   
+                                <EmailInput onClick={this.submitEmail} onChange={this.handleEmailChange} />   
                             </div>
                         </div>
                     </div>

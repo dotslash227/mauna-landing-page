@@ -22,3 +22,20 @@
         padding-left: 1.5rem;
     }
 }
+
+@media (max-width: 600px){
+    .navbar{
+        float: right;                
+    }
+    .bg-light{
+        background-color:white;
+    }
+    .mauna-menu{
+        font-size:30px;    
+        color: #4484a8;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: 1.5rem;
+    }
+}

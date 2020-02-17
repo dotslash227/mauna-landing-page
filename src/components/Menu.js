@@ -23,7 +23,7 @@ class Menu extends React.Component{
                     <a className="nav-item nav-link" href="#">Docs</a>
                     </div>
                 </div>
-            </nav>
+            </nav>            
         )
     }
 }
