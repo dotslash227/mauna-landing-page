@@ -7,6 +7,11 @@
 */
 
 @media (min-width: 992px){
+    .landing-menu{
+        position: absolute;        
+        left:65vw;
+        z-index:200;        
+    }
     .navbar{
         float: right;        
     }

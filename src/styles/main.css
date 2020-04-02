@@ -3,6 +3,18 @@
 
 /* For Media widths above 992 px (large and xl screens) */
 @media(min-width:992px){
+
+    /* Styling for social media links */
+    .social-icons-box{
+        margin-top:50px;
+        margin-left: 17em;
+    }
+
+    .social-icon{
+        max-width:60px;
+        margin-left: 20px;
+    }
+
     .container-fluid{
         margin-left:-14px;
     }    
@@ -14,11 +26,18 @@
 
     /* Styling for the wanderer of the sea */
     .home-img{
-        max-width: 100%;
+        max-width: 45vw;
+    }
+    
+    /* CSS Style for right pane for pages other than home */
+    .homeContentArea2{
+        width: 50vw;
+        margin-top:120px;
     }
 
     /* Landing Page content area placeholder styling  */
     .homeContentArea{
+        margin-top:70px;
         width: 50vw;
     }
 
@@ -43,6 +62,18 @@
         color: #70c681;
         font-size:1.5em;
     }
+
+    .wandererText{
+        font-size:15px;
+        position: relative;
+        float:right;
+        text-align: right;
+        top:-120px;
+        color: white;
+        z-index:100;
+        margin-right:100px;        
+    }
+
 }
 
 

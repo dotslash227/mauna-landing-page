@@ -1,7 +1,7 @@
 // ReactJS Component for Input Email for main landing page
 // Dependencies: EmailInput.css for styling and react
 import React from 'react';
-import '../styles/emailInput.css';
+import "../styles/emailInput.css";
 
 class EmailInput extends React.Component{
     constructor(props){
