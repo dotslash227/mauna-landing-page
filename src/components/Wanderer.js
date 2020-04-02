@@ -11,9 +11,7 @@ class Wanderer extends React.Component{
                     Wanderer above the Sea of Fog<br />
                     Caspar David Friedrich c.1818<br />                                                            
                     Into the darkness they go, the wise and the lovely.
-                </span>
-                {/* <p className="wandererText">                    
-                </p>                 */}
+                </span>                
             </div>                                
         )
     }
