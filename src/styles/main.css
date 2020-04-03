@@ -79,7 +79,23 @@
 
 
 /* CSS Stylings for Mobile and smaller screens */
-@media (max-width: 767px){         
+@media (max-width: 767px){  
+
+    body{
+        background-image: url("../assets/starry.png");
+    }
+    
+    /* Styling for social media links */
+    .social-icons-box{
+        margin-top:50px;
+        margin-left: 6em;
+    }
+
+    .social-icon{
+        max-width:40px;
+        margin-left: 20px;
+    }
+
     .homeImagePlaceholder{    
         max-width:100%;
         display: none;
@@ -87,8 +103,8 @@
     .home-img{
         max-width: 100%;
     }
-    .container-fluid{
-        padding-top:10px;                
+    .container-fluid{        
+        padding-top:20px;                
     }    
 
     /* Landing Page Image PlaceHolder styling */
@@ -107,14 +123,14 @@
     /* Styling for mauna logo */
     .logo{
         max-width: 300px;    
-        margin-top:-2em;
+        margin-top:2em;
     }
 
     /* Styling for the main intro text at mauna landing page */
     .home-text{
         margin-top:1em;
         line-height: 1.5em;
-        color: #333333;
+        color: #fff;
         font-size:2em;
         font-family: 'Quicksand', sans-serif;
     }

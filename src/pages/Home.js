@@ -3,7 +3,8 @@
 import React from 'react';
 import Menu from '../components/Menu'; // Menu Component
 import "../styles/main.css"; // Main landing page css
-import Logo from '../assets/logo.png'; //Logo file
+import Logo from "../assets/logo.png";
+import MobileLogo from "../assets/mauna-dark.png";
 import FbLogo from '../assets/fblogo.png';
 import Twitter from '../assets/twitter.png';
 import LinkedIn from '../assets/linkedinround.png';
@@ -12,9 +13,9 @@ import Wanderer from "../components/Wanderer";
 
 class Home extends React.Component{
     constructor(props){
-        super(props);
+        super(props);        
         this.state = { 
-            emailAddress:''
+            emailAddress:'',                        
         }
         this.handleEmailChange = this.handleEmailChange.bind(this); //Binder for handleEmail input method
         this.submitEmail = this.submitEmail.bind(this); // Binder for submit email method
@@ -31,7 +32,7 @@ class Home extends React.Component{
         console.log("email in state: ", this.state.emailAddress);
     }
 
-    render(){
+    render(){        
         return(            
             <div className="row">      
                 <Wanderer />          
@@ -39,7 +40,9 @@ class Home extends React.Component{
                     {/* <Menu /> */}
                     <div className="container">
                         <div className="text-center">
-                            <img src={Logo} alt="Mauna AI Logo" className="logo img-fluid" />
+                            {
+                                (window.innerWidth > 768) ? <img src={Logo} alt="Mauna AI Logo" className="logo img-fluid" /> : <img src={MobileLogo} alt="Mauna AI Logo" className="logo img-fluid" />
+                            }                            
                             <p className="home-text">
                                 Build State of the Art<br />
                                 Conversational Interfaces<br />
@@ -66,7 +69,7 @@ class Home extends React.Component{
                     </div>
                 </div>
             </div>                                            
-        )
+        )        
     }
 }
 
