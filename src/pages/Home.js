@@ -56,13 +56,13 @@ class Home extends React.Component{
                         {/* Start of social media icon box */}
                         <div className="social-icons-box">
                             <a target="_blanl" href="https://www.facebook.com">
-                                <img src={FbLogo} alt="Facebook Logo" className="social-icon" />
+                                <img src={FbLogo} alt="Facebook Logo" className="social-icon img-fluid" />
                             </a>
                             <a target="_blanl" href="https://www.facebook.com">
-                                <img src={Twitter} alt="Twitter logo" className="social-icon" />
+                                <img src={Twitter} alt="Twitter logo" className="social-icon img-fluid" />
                             </a>
                             <a target="_blanl" href="https://www.facebook.com">
-                                <img src={LinkedIn} alt="Twitter logo" className="social-icon" />
+                                <img src={LinkedIn} alt="Twitter logo" className="social-icon img-fluid" />
                             </a>                                                        
                         </div>
                         {/* End of social media icon box */}

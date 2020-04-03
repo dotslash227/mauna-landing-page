@@ -87,13 +87,14 @@
     
     /* Styling for social media links */
     .social-icons-box{
-        margin-top:50px;
-        margin-left: 6em;
+        margin-top:50px;        
+        display: flex;
+        justify-content: center;
     }
 
-    .social-icon{
-        max-width:40px;
-        margin-left: 20px;
+    .social-icon{      
+        margin-right: 30px;
+        max-width: 40px;        
     }
 
     .homeImagePlaceholder{    
