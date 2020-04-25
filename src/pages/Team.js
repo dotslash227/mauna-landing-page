@@ -29,7 +29,7 @@ class Team extends React.Component{
                 "vivek": {fullName: "Vivek Jain", pos:"Business"}
             }            
         }        
-        // this.renderPerson = this.renderPerson.bind(this);        
+        this.renderPerson = this.renderPerson.bind(this);        
         this.changeSelected = this.changeSelected.bind(this);
     }
 
