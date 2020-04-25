@@ -17,9 +17,7 @@ class Menu extends React.Component{
                             <div className="navbar-nav">                                                        
                                 <Link to="/" className="nav-item nav-link active mr3">Home</Link>
                                 <Link to="/about" className="nav-item nav-link active mr3">About</Link>            
-                                <a className="nav-item nav-link" href="#">Team</a>
-                                <a className="nav-item nav-link" href="#">Join Us</a>                                                                            
-                                <a className="nav-item nav-link" href="#">Docs</a>
+                                <Link to="/team" className="nav-item nav-link active mr3">Team</Link>                                            
                             </div>
                         </div>
                     </nav>                                                                     
