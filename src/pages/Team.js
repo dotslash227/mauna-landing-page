@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/team.css';
-import '../styles/diamonds.css';
 import Logo from '../assets/mauna-icon-dark.png';
 import Diwank from '../assets/team/diwank.png'
 import Ishaan from '../assets/team/Ishaan.png';
@@ -11,6 +10,7 @@ import Nina from '../assets/team/Nina.png';
 import Jazzy from '../assets/team/Jazzy.png';
 import Bruce from '../assets/team/Bruce.png';
 import Philip from '../assets/team/Philip.png'
+import Menu from '../components/Menu';
 
 class Team extends React.Component{
     constructor(props){
@@ -60,35 +60,38 @@ class Team extends React.Component{
     }
     
     render(){
-        return(            
-            <div className="row">    
-                <div className="col">
-                    <p className="main-text">The Craftsmen</p>
-                    <p className="words">
-                        If you want to build a ship, don't drum up people to collect wood <br />
-                        and don't assign them tasks and work, but rather teach them to long <br />
-                        for the endless immensity of the sea. <br />
-                        - Antoine de Saint-Exupery
-                    </p>
-                    <div className="team-pics">
-                        <div className="section-1-team">                            
-                            <img src={Diwank} className="human1" alt="Diwank" onClick={()=>this.changeSelected("diwank")} />
-                            <img src={Ishaan} className="human1" alt="Ishaan" onClick={()=>this.changeSelected("ishaan")} />
-                            <img src={Nina} className="human1" alt="Nina" onClick={()=>this.changeSelected("nina")} />
-                            <img src={Vivek} className="human1" style={{marginLeft:20}} alt="Vivek" onClick={()=>this.changeSelected("vivek")} />
-                            <img src={Bruce} className="human" style={{marginLeft:383, marginTop:-61}} alt="Bruce" onClick={()=>this.changeSelected("bruce")} />
-                            <div></div>                            
-                            <img src={Dmitry} className="human" style={{marginLeft:383, marginTop:-500}} alt="Dmitry" onClick={()=>this.changeSelected("dmitry")} />
-                            <div></div>
-                            <img src={Philip} className="human" style={{marginLeft:465, marginTop:-83}} alt="Philip" onClick={()=>this.changeSelected("philip")} />
-                            <div></div>
-                            <img src={Jazzy} className="human" style={{marginLeft:465, marginTop:-825}} alt="Jazzy" onClick={()=>this.changeSelected("jazzy")  } />
-                            <div></div>
-                            <img src={Dhruv} className="human" style={{marginLeft:549, marginTop:-380}} alt="Dhruv" onClick={()=>this.changeSelected("dhruv")} />
-                        </div>                         
-                    </div>
-                    {(this.state.current) && this.renderPerson()}
-                </div>                
+        return(                      
+            <div>
+                <Menu showBird />
+                <div className="row">                    
+                    <div className="col">
+                        <p className="main-text">The Craftsmen</p>
+                        <p className="words">
+                            If you want to build a ship, don't drum up people to collect wood <br />
+                            and don't assign them tasks and work, but rather teach them to long <br />
+                            for the endless immensity of the sea. <br />
+                            - Antoine de Saint-Exupery
+                        </p>
+                        <div className="team-pics">
+                            <div className="section-1-team">                            
+                                <img src={Diwank} className="human1" alt="Diwank" onClick={()=>this.changeSelected("diwank")} />
+                                <img src={Ishaan} className="human1" alt="Ishaan" onClick={()=>this.changeSelected("ishaan")} />
+                                <img src={Nina} className="human1" alt="Nina" onClick={()=>this.changeSelected("nina")} />
+                                <img src={Vivek} className="human1" style={{marginLeft:20}} alt="Vivek" onClick={()=>this.changeSelected("vivek")} />
+                                <img src={Bruce} className="human" style={{marginLeft:383, marginTop:-61}} alt="Bruce" onClick={()=>this.changeSelected("bruce")} />
+                                <div></div>                            
+                                <img src={Dmitry} className="human" style={{marginLeft:383, marginTop:-500}} alt="Dmitry" onClick={()=>this.changeSelected("dmitry")} />
+                                <div></div>
+                                <img src={Philip} className="human" style={{marginLeft:465, marginTop:-83}} alt="Philip" onClick={()=>this.changeSelected("philip")} />
+                                <div></div>
+                                <img src={Jazzy} className="human" style={{marginLeft:465, marginTop:-825}} alt="Jazzy" onClick={()=>this.changeSelected("jazzy")  } />
+                                <div></div>
+                                <img src={Dhruv} className="human" style={{marginLeft:549, marginTop:-380}} alt="Dhruv" onClick={()=>this.changeSelected("dhruv")} />
+                            </div>                         
+                        </div>
+                        {(this.state.current) && this.renderPerson()}
+                    </div>                
+                </div>
             </div>
         )
     }

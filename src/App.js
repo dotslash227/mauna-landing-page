@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Menu from './components/Menu';
+// import Menu from './components/Menu';
 import Home from './pages/Home';
-import About from './pages/About';
 import Team from './pages/Team';
+import BlogHome from './pages/Blog/BlogHome';
 import {
   HashRouter as Router,  
   Switch, Route
@@ -13,11 +13,10 @@ class App extends React.Component{
 
   render(){
     return(
-      <Router>            
-        <Menu />    
+      <Router>                    
         <Switch>                    
           <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />          
+          <Route exact path="/blog" component={BlogHome} />          
           <Route exact path="/team" component={Team} />
         </Switch>
       </Router>      

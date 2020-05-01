@@ -37,6 +37,7 @@ class Home extends React.Component{
             <div className="row">      
                 <Wanderer />          
                 <div className="homeContentArea col">
+                    <Menu />
                     {/* <Menu /> */}
                     <div className="container">
                         <div className="text-center">
