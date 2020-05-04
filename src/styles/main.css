@@ -1,5 +1,8 @@
 /* Main CSS Styling for Mauna Landing Page */
-
+@font-face{
+    font-family: 'gill';
+    src:url(../assets/gil.TTF);
+}
 
 /* For Media widths above 992 px (large and xl screens) */
 @media(min-width:992px){

@@ -37,6 +37,14 @@ module.exports = {
               },
             ],
         },
+        {
+          test: /\.(woff|woff2|eot|ttf|otf|TTF)$/i,
+          use:[
+            {
+              loader: 'file-loader',
+            },
+          ],
+        },
       ],      
     }
   };

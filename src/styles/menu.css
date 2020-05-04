@@ -7,6 +7,12 @@
 */
 
 @media (min-width: 992px){
+    .nav-item{
+        color:white;
+    }
+    .nav-item:hover{
+        color:white;
+    }
     .overlay-menu{
         background: none;
         box-shadow: none;
